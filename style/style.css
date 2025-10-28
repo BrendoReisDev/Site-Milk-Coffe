@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Code Pro", monospace;
+    background-color: rgb(28, 28, 28);
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+header {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.202);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 5rem;
+    display: flex;
+    object-fit: cover;
+}
+
+header,
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin-left: 1rem;
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+}
+
+nav a:hover {
+    color: rgb(213, 213, 213);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.icon-zap img   {
+    position: fixed;
+    z-index: 100;
+    bottom: 1rem;
+    right: 1rem;
+    width: 4rem;
+    transition: all 0.5s ease;
+}
+
+.icon-zap img:hover  {
+transform: scale(1.2);
+}
+.home-grupo {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.imagem-fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imagem-fundo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.home-info {
+    position: relative;
+    z-index: 2;
+    color: aliceblue;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 3rem;
+
+}
+
+.home-info p {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.home-info h1 {
+    font-weight: 400;
+}
+
+.btn {
+    background-color: #fff;
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    margin-top: 2rem;
+    transition: all 0.5s ease;
+    display: inline-block;
+    width: 10rem;
+    text-align: center;
+    height: fit-content;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: black;
+}
+
+#sobre {
+    background-color: rgb(68, 61, 61);
+    width: 100%;
+    height: 100%;
+}
+
+.sobre-grupo {
+    display: flex;
+    width: 100%;
+    height: 40vw;
+}
+
+.imagem-fundo-sobre {
+    width: 30%;
+    height: 100%;
+}
+
+.imagem-fundo-sobre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-sobre {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.texto-sobre h2 {
+    margin: 1rem 2rem;
+    text-align: left;
+    font-size: 2rem;
+
+}
+
+.texto-sobre p {
+    margin: 2rem;
+    text-align: left;
+}
+
+#text-h2 {
+    margin-top: 4rem;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.card-cardapio {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 4rem 1rem;
+    min-height: auto;
+    align-items: stretch;
+}
+
+
+.card-01-cardapio,
+.card-02-cardapio,
+.card-03-cardapio {
+    background-color: rgba(68, 61, 61, 0.46);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    color: rgb(226, 226, 226);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card-01-cardapio:hover,
+.card-02-cardapio:hover,
+.card-03-cardapio:hover {
+    transform: scale(1.1);
+    color: #ffff;
+    background-color: rgb(68, 61, 61);
+}
+
+
+.card-01-cardapio li,
+.card-02-cardapio li,
+.card-03-cardapio li {
+    list-style: none;
+    margin-top: 0.2rem;
+}
+
+
+#galeria {
+    background-color: rgb(68, 61, 61);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#galeria h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+.cards-galeria {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto 4rem auto;
+
+}
+
+
+.card-01 img,
+.card-02 img,
+.card-03 img,
+.card-04 img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    border: 4px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+
+}
+
+.card-01 img:hover,
+.card-02 img:hover,
+.card-03 img:hover,
+.card-04 img:hover {
+    transform: scale(1.05);
+}
+
+
+
+footer {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    position: relative;
+}
+
+.form-footer {
+    position: relative;
+    top: 5rem;
+    background-color: rgb(68, 61, 61);
+    padding: 10px;
+}
+
+.form-footer input {
+    padding: 0.5rem 1.1rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: rgba(29, 29, 29, 0.349);
+    color: #fff;
+}
+
+
+.form-footer input:focus {
+    outline: none;
+}
+
+.form-footer button {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 1.2rem;
+    border-radius: 1rem;
+    border: 0px;
+    font-weight: 600;
+    background-color: #fff;
+    transition: all 0.5s ease;
+    border: 1px solid rgba(29, 29, 29, 0.349);
+}
+
+.form-footer button:hover {
+    background-color: rgba(29, 29, 29, 0.349);
+    border: 1px solid white;
+    color: #fff;
+}
+
+.form-footer label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 1024px) {
+
+    .card-cardapio {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .cards-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+    }
+
+    .sobre-grupo {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .imagem-fundo-sobre,
+    .texto-sobre {
+        width: 100%;
+    }
+
+    .texto-sobre {
+        padding: 1rem 2rem;
+    }
+
+
+    nav ul li {
+        margin-left: 0.5rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .card-cardapio,
+    .cards-galeria {
+        grid-template-columns: 1fr;
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+
+    .home-info {
+        margin-left: 1rem;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+
+    .btn,
+    .card-01-cardapio,
+    .card-02-cardapio,
+    .card-03-cardapio {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+
+    .cards-galeria img {
+        width: 100%;
+        height: auto;
+    }
+
+    .icon-zap img {
+          width: 3rem
+    }
+ 
+}
