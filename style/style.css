@@ -18,7 +18,7 @@ header {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.202);
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0;
     z-index: 1000;
 }
@@ -69,7 +69,7 @@ transform: scale(1.2);
 }
 .home-grupo {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
 }
@@ -142,7 +142,7 @@ transform: scale(1.2);
 .sobre-grupo {
     display: flex;
     width: 100%;
-    height: 40vw;
+    height: auto;
 }
 
 .imagem-fundo-sobre {
@@ -339,7 +339,7 @@ footer {
 
     .cards-galeria {
         grid-template-columns: repeat(2, 1fr);
-        width: 90vw;
+        width: 90%;
     }
 
     .sobre-grupo {
@@ -368,7 +368,7 @@ footer {
     .card-cardapio,
     .cards-galeria {
         grid-template-columns: 1fr;
-        width: 90vw;
+        width: 90%;
         margin: 0 auto;
     }
 
